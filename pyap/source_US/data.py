@@ -125,6 +125,25 @@ post_direction = r"""
                     )
                 """
 
+post_direction2 = r"""
+                    (?P<post_direction2>
+                        (?:
+                            [Nn][Oo][Rr][Tt][Hh]|
+                            [Ss][Oo][Uu][Tt][Hh]|
+                            [Ee][Aa][Ss][Tt]|
+                            [Ww][Ee][Ss][Tt]
+                        )
+                        |
+                        (?:
+                            NW|NE|SW|SE
+                        )
+                        |
+                        (?:
+                            N\.?\ |S\.?\ |E\.?\ |W\.?\ 
+                        )
+                    )
+                """
+
 # This list was taken from: https://pe.usps.com/text/pub28/28apc_002.htm
 # Broadway and Lp (abbreviation for Loop) were added to the list
 street_type_list = [
@@ -333,9 +352,10 @@ full_street = r"""
     (?:
         (?P<full_street>
             {street_number}
+            {post_direction}?\ ?
             {street_name}?\,?\ ?
             (?:[\ \,]{street_type})\,?\ ?
-            {post_direction}?\,?\ ?
+            {post_direction2}?\,?\ ?
             {floor}?\,?\ ?
             {building}?\,?\ ?
             {occupancy}?\,?\ ?
