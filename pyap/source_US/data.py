@@ -365,6 +365,7 @@ full_street = r"""
                 street_name=street_name,
                 street_type=street_type,
                 post_direction=post_direction,
+                post_direction2=post_direction2,
                 floor=floor,
                 building=building,
                 occupancy=occupancy,
