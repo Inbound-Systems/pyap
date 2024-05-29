@@ -147,6 +147,7 @@ post_direction2 = r"""
 # This list was taken from: https://pe.usps.com/text/pub28/28apc_002.htm
 # Broadway and Lp (abbreviation for Loop) were added to the list
 street_type_list = [
+    'N', 'S', 'E', 'W',
     'Allee', 'Alley', 'Ally', 'Aly', 'Anex', 'Annex',
     'Annx', 'Anx', 'Arc', 'Arcade', 'Av', 'Ave',
     'Aven', 'Avenu', 'Avenue', 'Avn', 'Avnue', 'Bayoo',
