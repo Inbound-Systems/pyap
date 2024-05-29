@@ -4,7 +4,7 @@
 
 import re
 import pytest
-from pyap import utils
+from pyap import utils, parse
 from pyap.packages import six
 import pyap.source_US.data as data_us
 import pyap.parser
@@ -762,7 +762,7 @@ License
 #   if match:
 #     print(match)
 
-response = pyap.api.parse(input, country='US')
+response = parse(input, country='US')
 for address in response:
   print(address.as_dict())
   print("\n\n")
