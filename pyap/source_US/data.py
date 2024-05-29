@@ -262,7 +262,7 @@ street_type = r"""
             (?:
                 (?P<street_type>
                     {street_types}
-                )?
+                )
                 (?P<route_id>
                     [\(\ \,]{route_symbols}
                     [Rr][Oo][Uu][Tt][Ee]\ [A-Za-z0-9]+[\)\ \,]{route_symbols}
