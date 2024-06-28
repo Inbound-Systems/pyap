@@ -381,9 +381,13 @@ region1 = r"""
         (?P<region1>
             \b(?:
                 # states abbreviations
-                AL|AK|AZ|AR|CA|CO|CT|DE|DC|FL|G[Aa]|HI|ID|IL|IN|IA|KS|KY|LA|ME|MD|MA|MI|
-                MN|MS|MO|MT|NE|NV|NH|NJ|NM|NY|NC|ND|OH|OK|OR|PA|RI|SC|SD|TN|TX|UT|VT|
-                VA|WA|WV|WI|WY|
+                A[Ll]|A[Kk]|A[Zz]|A[Rr]|C[Aa]|C[Oo]|C[Tt]|D[Ee]|
+                D[Cc]|F[Ll]|G[Aa]|H[Ii]|I[Dd]|I[Ll]|I[Nn]|I[Aa]|
+                K[Ss]|K[Yy]|L[Aa]|M[Ee]|M[Dd]|M[Aa]|M[Ii]|M[Nn]|
+                M[Ss]|M[Oo]|M[Tt]|N[Ee]|N[Vv]|N[Hh]|N[Jj]|N[Mm]|
+                N[Yy]|N[Cc]|N[Dd]|O[Hh]|O[Kk]|O[Rr]|P[Aa]|R[Ii]|
+                S[Cc]|S[Dd]|T[Nn]|T[Xx]|U[Tt]|V[Tt]|V[Aa]|W[Aa]|
+                W[Vv]|W[Ii]|W[Yy]|
                 # unincorporated & commonwealth territories
                 AS|GU|MP|PR|VI
             )\b
